@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="James Wynne English — Interactive Lesson Index covering B1/B1+ and B2 grammar, vocabulary, reading comprehension, and common Italian-to-English error corrections.">
+    <meta name="author" content="James Wynne English">
+    <title>James Wynne English — Lesson Portal &amp; Study Index</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .lesson-card {
+            transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+        }
+        .lesson-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- =================================================================== -->
+    <!-- HERO / HEADER SECTION                                               -->
+    <!-- =================================================================== -->
+    <header class="bg-gradient-to-br from-[#0a1931] via-[#10264a] to-[#163464] text-white border-b border-amber-500/30 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 flex flex-col md:flex-row items-center justify-between gap-8">
+            <!-- Logo (Exact filename: jw_trans.png) -->
+            <div class="flex-shrink-0 bg-white/95 p-3 rounded-full shadow-lg ring-4 ring-amber-400/40">
+                <img 
+                    src="jw_trans.png" 
+                    alt="James Wynne English Lessons Logo" 
+                    class="h-28 w-28 sm:h-32 sm:w-32 object-contain"
+                >
+            </div>
+
+            <!-- Title & Introduction -->
+            <div class="text-center md:text-left flex-grow">
+                <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-widest bg-amber-400/15 text-amber-300 border border-amber-400/30 rounded-full mb-3">
+                    Interactive Study Portal &bull; B1 / B1+ / B2
+                </span>
+                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-3">
+                    James Wynne English Lessons
+                </h1>
+                <p class="text-sm sm:text-base text-slate-200 max-w-2xl leading-relaxed">
+                    Structured grammar notes, reading passages, and self-checking interactive exercises. Select any lesson card below to open the worksheet, complete the tasks online, or print a clean study copy.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- FILTER BAR                                                          -->
+    <!-- =================================================================== -->
+    <section class="max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center gap-2" id="level-filters">
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-1">Filter by Level:</span>
+                <button type="button" onclick="filterLessons('all', this)" class="filter-btn active px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-[#0a1931] text-white cursor-pointer transition-colors">
+                    All Lessons (8)
+                </button>
+                <button type="button" onclick="filterLessons('B1/B1+', this)" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer transition-colors">
+                    B1 / B1+
+                </button>
+                <button type="button" onclick="filterLessons('B1+', this)" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer transition-colors">
+                    B1+
+                </button>
+                <button type="button" onclick="filterLessons('B2', this)" class="filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 cursor-pointer transition-colors">
+                    B1+ / B2
+                </button>
+            </div>
+            <div class="w-full sm:w-64">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    oninput="searchLessons()" 
+                    placeholder="Search grammar topic..." 
+                    class="w-full px-3.5 py-1.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- LESSON CARDS GRID                                                   -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- LESSON 1 -->
+            <a href="1%20jw%20less.html" data-level="B1/B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-blue-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-blue-50 text-blue-800 rounded-md">
+                            Lesson 01
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1 / B1+ &bull; 29 Questions
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors mb-2">
+                        Grammar Foundations &amp; Practice
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Comprehensive diagnostic and practice suite covering reported speech (<em>said</em> vs. <em>told</em> &amp; backshifting), multiple meanings of <em>get</em>, countable vs. uncountable nouns, modals, 3rd-person <em>-s</em> pronunciation, <em>-ed/-ing</em> adjectives, and <em>since/for</em> with the Present Perfect.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Reported Speech</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Verb GET</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Countability</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Since / For</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                        <span>Open Lesson 1</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 2 -->
+            <a href="2%20jw%20less.html" data-level="B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-purple-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-purple-50 text-purple-800 rounded-md">
+                            Lesson 02
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1+ &bull; Interactive &amp; Video
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-purple-700 transition-colors mb-2">
+                        Grammar Into Focus: Habits &amp; Verb Patterns
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Explores present and past habits (<em>used to</em>, <em>would</em>, and <em>continuous + always</em> for annoying habits) alongside verbs that change meaning depending on whether they take a gerund (<em>-ing</em>) or <em>to-infinitive</em> (<em>stop</em>, <em>remember</em>, <em>try</em>), plus guided video study prompts.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Used to / Would</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Verb Patterns</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Meaning Shifts</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Video Study</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-purple-700">
+                        <span>Open Lesson 2</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 3 -->
+            <a href="3%20jw%20less.html" data-level="B1/B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-blue-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-blue-50 text-blue-800 rounded-md">
+                            Lesson 03
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1 / B1+ &bull; 3 Sections
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-blue-700 transition-colors mb-2">
+                        Adjectives vs. Adverbs, Quantifiers &amp; Narrative Past
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Targeted practice distinguishing the adjective <em>good</em> from the adverb <em>well</em>, selecting quantifiers (<em>much</em>, <em>a lot of</em>, <em>all of</em>) by countability and sentence polarity, and sequencing earlier past events with the Past Perfect (<em>had + past participle</em>).
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Good vs. Well</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Much / A Lot Of / All Of</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Past Perfect</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-blue-700">
+                        <span>Open Lesson 3</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 4 -->
+            <a href="4%20jw%20less.html" data-level="B1/B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-emerald-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-emerald-50 text-emerald-800 rounded-md">
+                            Lesson 04
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1 / B1+ &bull; Cumulative Review
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors mb-2">
+                        Summary Review: Consolidated Grammar &amp; Transformations
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Cumulative checkpoint combining reported speech, <em>get</em> expressions, uncountable nouns (<em>advice</em>), prohibition modals (<em>mustn't</em>), participle adjectives, <em>used to</em>, <em>remember/stop</em> patterns, <em>good/well</em>, and Past Perfect sentence transformations plus a short fable writing task.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Cumulative Quiz</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Transformations</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Fable Writing</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+                        <span>Open Lesson 4</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 5 -->
+            <a href="5%20jw%20less.html" data-level="B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-pink-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-pink-50 text-pink-800 rounded-md">
+                            Lesson 05
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1+ &bull; Culture &amp; Grammar
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-pink-700 transition-colors mb-2">
+                        Grammar, Vocabulary &amp; Renaissance Art (Masaccio)
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Covers usage notes (<em>fast</em> vs. <em>quickly</em>, <em>lying</em> vs. <em>laying</em>), <em>-ed/-ing</em> participle adjectives, directional verbs (<em>bring</em> vs. <em>take</em>), quantifiers (<em>too</em>, <em>so much/many</em>, <em>enough</em>, <em>a lot</em>), and a reading and embedded video study on Masaccio and the Brancacci Chapel.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Bring vs. Take</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Too / So / Enough</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">-ED / -ING</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Art History</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-pink-700">
+                        <span>Open Lesson 5</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 6 -->
+            <a href="6%20jw%20less.html" data-level="B1+" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-amber-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-amber-50 text-amber-800 rounded-md">
+                            Lesson 06
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1+ &bull; Reading &amp; Grammar
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors mb-2">
+                        The Clockmaker&rsquo;s Secret: Reading &amp; Verb Patterns
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Features the original short story <em>&ldquo;The Clockmaker&rsquo;s Secret&rdquo;</em> followed by comprehension questions and grammar drills contrasting <em>used to</em>, <em>would</em>, and <em>be/get used to + -ing</em>, as well as meaning shifts in <em>stop</em>, <em>remember</em>, <em>try</em>, and <em>regret</em>.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Narrative Fable</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Be Used To + -ing</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Try / Regret / Stop</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-amber-700">
+                        <span>Open Lesson 6</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 7 -->
+            <a href="7%20jw%20less.html" data-level="B2" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-indigo-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-indigo-50 text-indigo-800 rounded-md">
+                            Lesson 07
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1+ / B2 &bull; Language Review
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-700 transition-colors mb-2">
+                        Word Order (S.V.O.M.P.T.), Suffixes &amp; &ldquo;Itanglish&rdquo; Fixes
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Detailed session feedback covering strict English word order (S.V.O.M.P.T.), English-Italian suffix patterns (<em>-ty</em>, <em>-ly</em>, <em>-tion</em>), false friends (<em>waste</em>, <em>pass</em>, <em>check</em> vs. <em>control</em>), idioms (<em>a double-edged sword</em>), and 4 structured exercises replacing literal Italian transfers.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">S.V.O.M.P.T. Order</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">False Friends</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Itanglish Fixes</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Suffixes</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-indigo-700">
+                        <span>Open Lesson 7</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LESSON 8 -->
+            <a href="8%20jw%20less.html" data-level="B2" class="lesson-card group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 hover:border-indigo-600/50 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold bg-indigo-50 text-indigo-800 rounded-md">
+                            Lesson 08
+                        </span>
+                        <span class="px-2.5 py-0.5 text-xs font-semibold bg-slate-100 text-slate-600 rounded-full">
+                            B1 / B2 &bull; 30-Item Quiz
+                        </span>
+                    </div>
+                    <h2 class="text-lg font-bold text-slate-900 group-hover:text-indigo-700 transition-colors mb-2">
+                        In-Lesson Notes Breakdown &amp; &ldquo;Stare&rdquo; vs. &ldquo;To Be&rdquo;
+                    </h2>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Breaks down dependent prepositions (<em>compared to</em>, <em>depends on</em>), infinitives of purpose (<em>to continue</em>), natural phrasing (<em>behaviour</em>, <em>this is why</em>, <em>at the moment</em>), and an intensive 30-item quiz mapping Italian <em>stare</em> to English <em>to be</em>, continuous tenses, and imperatives.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-1.5 mb-4">
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Prepositions</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">&ldquo;Stare&rdquo; vs. To Be</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">Continuous Tenses</span>
+                        <span class="px-2 py-0.5 text-[11px] font-medium bg-slate-50 border border-slate-200 text-slate-600 rounded">30-Item Quiz</span>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-indigo-700">
+                        <span>Open Lesson 8</span>
+                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Empty search state -->
+        <div id="no-results" class="hidden text-center py-12 bg-white rounded-2xl border border-slate-200">
+            <p class="text-slate-600 font-medium">No lessons match your current filter or search term.</p>
+            <button type="button" onclick="resetFilters()" class="mt-3 px-4 py-2 bg-[#0a1931] text-white text-xs font-semibold rounded-lg cursor-pointer">
+                Show All Lessons
+            </button>
+        </div>
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- ALWAYS-VISIBLE STICKY FOOTER SECTION (IDENTICAL TO LESSON FILES)    -->
+    <!-- =================================================================== -->
+    <footer class="sticky bottom-0 z-10 bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] mt-auto print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+            
+            <!-- Copyright -->
+            <p class="text-slate-400">&copy; James Wynne English. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                <!-- Email -->
+                <a href="mailto:jwenglish@outlook.it" class="hover:text-slate-800 transition-colors">
+                    email
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- Website -->
+                <a href="https://jiwynne72-tech.github.io/james/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-800 transition-colors">
+                    website
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/393515316723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-slate-800 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3.5 h-3.5 fill-current text-emerald-600 print:text-black" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>whatsapp</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        let currentLevel = 'all';
+
+        function filterLessons(level, btn) {
+            currentLevel = level;
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.remove('bg-[#0a1931]', 'text-white');
+                b.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            btn.classList.remove('bg-slate-100', 'text-slate-700');
+            btn.classList.add('bg-[#0a1931]', 'text-white');
+            applyFilters();
+        }
+
+        function searchLessons() {
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.lesson-card');
+            let visibleCount = 0;
+
+            cards.forEach(card => {
+                const cardLevel = card.getAttribute('data-level');
+                const cardText = card.textContent.toLowerCase();
+                const matchesLevel = (currentLevel === 'all') || (cardLevel === currentLevel);
+                const matchesSearch = (query === '') || cardText.includes(query);
+
+                if (matchesLevel && matchesSearch) {
+                    card.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.getElementById('no-results').classList.toggle('hidden', visibleCount > 0);
+        }
+
+        function resetFilters() {
+            document.getElementById('search-input').value = '';
+            const allBtn = document.querySelector('.filter-btn');
+            filterLessons('all', allBtn);
+        }
+    </script>
+</body>
+</html>
