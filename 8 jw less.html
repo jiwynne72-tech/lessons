@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In-lesson notes breakdown covering prepositions, false friends, sentence structure, and 30 exercises on Italian 'stare' vs English 'to be'.">
+    <meta name="keywords" content="prepositions, compared to, depends on, to continue, behaviour, at the moment, stare vs to be, grammar quiz">
+    <meta name="author" content="James Wynne English">
+    <meta name="lesson-level" content="B1/B2">
+    <meta name="lesson-topics" content="Prepositions & Phrasal Verbs, False Friends, Sentence Structure, 'Stare' vs 'To Be' (30 Items)">
+    <title>James Wynne English — In-Lesson Notes Breakdown</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Dedicated Print Stylesheet */
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10.5pt;
+                line-height: 1.5;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-clean {
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                border-color: #d1d5db !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                border: none !important;
+                border-bottom: 1px solid #9ca3af !important;
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+
+            textarea {
+                border: 1px solid #d1d5db !important;
+                border-radius: 4px !important;
+                padding: 6px !important;
+            }
+
+            .print-avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+
+            footer {
+                position: static !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <header class="bg-white border-b border-slate-200 print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Teacher Logo -->
+            <div class="flex items-center justify-center">
+                <img 
+                    src="https://static.wixstatic.com/media/6ce7a7_e9543ef199f041e19b45784dc836abeb~mv2.png" 
+                    alt="James Wynne English Logo" 
+                    class="h-14 sm:h-16 w-auto object-contain"
+                    onerror="this.onerror=null; this.src='https://placehold.co/220x64/f8fafc/1e293b?text=James+Wynne+English';"
+                >
+            </div>
+            <!-- Subtitle / Document Type -->
+            <div class="text-center sm:text-right">
+                <p class="text-xs font-semibold uppercase tracking-wider text-blue-600">In-Lesson Notes Breakdown</p>
+                <p class="text-sm font-medium text-slate-600">Grammar, Vocabulary & 30-Item Practice Quiz</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- STUDENT INFO & PRINT CONTROLS BAR                                   -->
+    <!-- =================================================================== -->
+    <section class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 print-clean">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                <!-- Student Name -->
+                <div class="sm:col-span-5">
+                    <label for="student-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="student-name" 
+                        name="student-name" 
+                        placeholder="Enter student full name"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Student Email -->
+                <div class="sm:col-span-5">
+                    <label for="student-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="student-email" 
+                        name="student-email" 
+                        placeholder="Enter student email address"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Print Button (Hidden when printing) -->
+                <div class="sm:col-span-2 no-print">
+                    <button 
+                        type="button" 
+                        onclick="window.print()" 
+                        class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-sm font-medium rounded-lg shadow-sm transition-colors cursor-pointer"
+                        aria-label="Print this page"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                        <span>Print</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MAIN CONTENT CONTAINER                                              -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">
+                    Lesson Notes
+                </span>
+                <h1 class="text-xl sm:text-2xl font-bold text-slate-900">
+                    In-Lesson Notes Breakdown
+                </h1>
+                <p class="text-sm text-slate-500 mt-1 italic">
+                    Prepositions, false friends, natural phrasing, translation notes, and interactive practice.
+                </p>
+            </div>
+
+            <div class="space-y-5 text-sm text-slate-700 leading-relaxed">
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <h2 class="text-base font-bold text-slate-900 mb-2">1. Errori di preposizioni e verbi frasali</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>&ldquo;respect = compared to&rdquo;:</strong> Often said instead of <strong>&ldquo;compared to&rdquo;</strong> when translating Italian <em>rispetto a</em>.</li>
+                        <li><strong>&ldquo;depends about = depends on&rdquo;:</strong> Literal translation of <em>dipende da</em> using <em>about</em>. Correction: <strong>&ldquo;depends on&rdquo;</strong>.</li>
+                        <li><strong>&ldquo;for continue = to continue&rdquo;:</strong> Purpose in English uses the infinitive <strong>&ldquo;to continue&rdquo;</strong> rather than <em>for + verb</em>.</li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <h2 class="text-base font-bold text-slate-900 mb-2">2. Vocabolario e falsi amici</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>&ldquo;comportament = behaviour&rdquo;:</strong> Use <strong>&ldquo;behaviour&rdquo;</strong> (UK) or <em>behavior</em> (US).</li>
+                        <li><strong>&ldquo;for this reasn = this is why&rdquo;:</strong> Natural phrasing is <strong>&ldquo;this is why&rdquo;</strong>.</li>
+                        <li><strong>&ldquo;In this period = at the moment (or NOW)&rdquo;:</strong> Avoid literal <em>in this period</em>; use <strong>&ldquo;at the moment&rdquo;</strong> or <strong>&ldquo;now&rdquo;</strong>.</li>
+                        <li><strong>Parting phrases:</strong> Instead of wishing someone a &ldquo;good job&rdquo; when leaving, use <strong>&ldquo;Enjoy your day!&rdquo;</strong></li>
+                    </ul>
+                </div>
+
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <h2 class="text-base font-bold text-slate-900 mb-2">3. Grammatica, traduzione e concetti</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Negative structure:</strong> Instead of <em>&ldquo;I have not any lesson&rdquo;</em>, use <strong>&ldquo;I don&rsquo;t have any lessons&rdquo;</strong>.</li>
+                        <li><strong>Contrast connectors:</strong> <em>d&rsquo;altro canto</em> = <strong>&ldquo;however&rdquo;</strong> / <strong>&ldquo;on the other hand&rdquo;</strong>.</li>
+                        <li><strong>Is vs. Have / Stare:</strong> Clarifying how Italian <em>stare</em> maps to English <em>to be</em>, continuous tenses, or set expressions rather than <em>have</em> or <em>stay</em>.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm border border-purple-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-purple-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-purple-100 text-purple-800 rounded-md mb-2">
+                    Interactive Quiz (30 Items)
+                </span>
+                <h2 class="text-xl font-bold text-slate-900">
+                    Quiz: &ldquo;Stare&rdquo; usato come &ldquo;To be&rdquo; in inglese
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">
+                    Select the correct English form for each sentence.
+                </p>
+            </div>
+
+            <div id="stare-quiz" class="space-y-3 text-sm">
+                
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">1. Oggi sto molto bene, grazie per avermelo chiesto.</p>
+                    <p class="text-slate-700 leading-relaxed">I <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="am"><option value="">-- choose --</option><option value="am">am</option><option value="have">have</option><option value="stay">stay</option></select> very well today, thanks for asking.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">2. Non sto per niente bene, credo di avere un po' di febbre.</p>
+                    <p class="text-slate-700 leading-relaxed">I <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="am not"><option value="">-- choose --</option><option value="am not">am not</option><option value="don't have">don't have</option><option value="don't stay">don't stay</option></select> feeling well at all, I think I'm running a slight fever.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">3. Come stai dopo il lungo viaggio di ieri?</p>
+                    <p class="text-slate-700 leading-relaxed">How <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are you"><option value="">-- choose --</option><option value="are you">are you</option><option value="have you">have you</option><option value="do you stay">do you stay</option></select> after yesterday's long trip?</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">4. La sorella sta molto meglio adesso che ha iniziato la terapia.</p>
+                    <p class="text-slate-700 leading-relaxed">The student's sister <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="is"><option value="">-- choose --</option><option value="is">is</option><option value="has">has</option><option value="stays">stays</option></select> much better now that she has started the therapy.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">5. Stai tranquillo, c'è ancora molto tempo prima che inizi l'esame.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Don't worry"><option value="">-- choose --</option><option value="Don't worry">Don't worry</option><option value="Stay calm">Stay calm</option><option value="Have calm">Have calm</option></select>, there is still plenty of time before the exam starts.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">6. Per favore, state fermi un secondo mentre scatto la foto!</p>
+                    <p class="text-slate-700 leading-relaxed">Please, <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="be still"><option value="">-- choose --</option><option value="be still">be still</option><option value="have still">have still</option><option value="stay firm">stay firm</option></select> for a second while I take the picture!</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">7. In questo momento sto lavorando a un progetto molto importante.</p>
+                    <p class="text-slate-700 leading-relaxed">I <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="am working"><option value="">-- choose --</option><option value="am working">am working</option><option value="stay working">stay working</option><option value="have working">have working</option></select> on a very important project at the moment.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">8. Che cosa stai facendo stasera dopo cena?</p>
+                    <p class="text-slate-700 leading-relaxed">What <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are you doing"><option value="">-- choose --</option><option value="are you doing">are you doing</option><option value="do you stay doing">do you stay doing</option><option value="have you doing">have you doing</option></select> tonight after dinner?</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">9. Stavamo giusto parlando di te quando sei entrato nella stanza.</p>
+                    <p class="text-slate-700 leading-relaxed">We <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="were"><option value="">-- choose --</option><option value="were">were</option><option value="had">had</option><option value="stayed">stayed</option></select> just talking about you when you walked into the room.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">10. I ragazzi stanno studiando in biblioteca per gli esami finali.</p>
+                    <p class="text-slate-700 leading-relaxed">The students <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> studying in the library for their final exams.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">11. Stai attento a non scivolare sul pavimento bagnato.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Be careful"><option value="">-- choose --</option><option value="Be careful">Be careful</option><option value="Stay attention">Stay attention</option><option value="Have care">Have care</option></select> not to slip on the wet floor.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">12. State zitti un momento, non riesco a sentire cosa dice il professore.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Be quiet"><option value="">-- choose --</option><option value="Be quiet">Be quiet</option><option value="Stay silent">Stay silent</option><option value="Have quiet">Have quiet</option></select> for a moment, I can't hear what the professor is saying.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">13. Questa giacca ti sta davvero bene con quei pantaloni scuri.</p>
+                    <p class="text-slate-700 leading-relaxed">This jacket <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="looks"><option value="">-- choose --</option><option value="looks">looks</option><option value="stays">stays</option><option value="has">has</option></select> really good on you with those dark trousers.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">14. Non riesco a capire perché stia così giù di morale oggi.</p>
+                    <p class="text-slate-700 leading-relaxed">I can't understand why they <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> so down today.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">15. Stiamo cercando un nuovo appartamento vicino alla stazione.</p>
+                    <p class="text-slate-700 leading-relaxed">We <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> looking for a new flat near the station.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">16. Domani pomeriggio starò a casa, quindi puoi passare quando vuoi.</p>
+                    <p class="text-slate-700 leading-relaxed">Tomorrow afternoon I <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="will be"><option value="">-- choose --</option><option value="will be">will be</option><option value="will have">will have</option><option value="will stay">will stay</option></select> at home, so you can drop by whenever you want.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">17. Stai comodo su quella poltrona o preferisci una sedia?</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Are you"><option value="">-- choose --</option><option value="Are you">Are you</option><option value="Do you stay">Do you stay</option><option value="Have you">Have you</option></select> comfortable in that armchair, or would you prefer a chair?</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">18. Sta piovendo talmente forte che non si vede nulla fuori dalla finestra.</p>
+                    <p class="text-slate-700 leading-relaxed">It <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="is"><option value="">-- choose --</option><option value="is">is</option><option value="has">has</option><option value="stays">stays</option></select> raining so hard that you can't see anything out the window.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">19. Stavo pensando che potremmo organizzare una gita per il prossimo weekend.</p>
+                    <p class="text-slate-700 leading-relaxed">I <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="was"><option value="">-- choose --</option><option value="was">was</option><option value="had">had</option><option value="stayed">stayed</option></select> thinking that we could plan a trip for next weekend.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">20. I genitori stanno ancora dormendo perché ieri sono tornati tardi.</p>
+                    <p class="text-slate-700 leading-relaxed">They <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> still sleeping because they got back late yesterday.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">21. Stai sicuro che non dimenticherò mai quello che hai fatto per me.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Be sure"><option value="">-- choose --</option><option value="Be sure">Be sure</option><option value="Stay sure">Stay sure</option><option value="Have sure">Have sure</option></select> that I will never forget what you did for me.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">22. Non stare lì impalato, vieni ad aiutarmi a portare le borse!</p>
+                    <p class="text-slate-700 leading-relaxed">Don't just <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="stand there"><option value="">-- choose --</option><option value="stand there">stand there</option><option value="have there">have there</option><option value="stay plant">stay plant</option></select>, come and help me carry the bags!</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">23. Stiamo aspettando l'autobus da più di venti minuti sotto la pioggia.</p>
+                    <p class="text-slate-700 leading-relaxed">We <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="have been"><option value="">-- choose --</option><option value="have been">have been</option><option value="are staying">are staying</option><option value="stay">stay</option></select> waiting for the bus for over twenty minutes in the rain.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">24. Come sta andando il tuo nuovo corso di inglese?</p>
+                    <p class="text-slate-700 leading-relaxed">How <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="is"><option value="">-- choose --</option><option value="is">is</option><option value="has">has</option><option value="stays">stays</option></select> your new English course going?</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">25. Stai pronto, perché tra cinque minuti dobbiamo uscire di casa.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Be ready"><option value="">-- choose --</option><option value="Be ready">Be ready</option><option value="Stay ready">Stay ready</option><option value="Have ready">Have ready</option></select>, because we have to leave the house in five minutes.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">26. Il mio telefono sta suonando da un minuto, ma non riesco a trovarlo.</p>
+                    <p class="text-slate-700 leading-relaxed">My phone <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="is ringing"><option value="">-- choose --</option><option value="is ringing">is ringing</option><option value="stays ringing">stays ringing</option><option value="has ringing">has ringing</option></select> for a minute, but I can't find it.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">27. Stanno costruendo un nuovo centro commerciale proprio dietro casa mia.</p>
+                    <p class="text-slate-700 leading-relaxed">They <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> building a new shopping centre right behind my house.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">28. Stammi vicino, c'è troppa folla in questa piazza.</p>
+                    <p class="text-slate-700 leading-relaxed"><select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="Stay close"><option value="">-- choose --</option><option value="Stay close">Stay close</option><option value="Have close">Have close</option><option value="Be nearness">Be nearness</option></select> to me, there's too much of a crowd in this square.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">29. Non so cosa stia succedendo, ma sembra qualcosa di serio.</p>
+                    <p class="text-slate-700 leading-relaxed">I don't know what <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="is"><option value="">-- choose --</option><option value="is">is</option><option value="has">has</option><option value="stays">stays</option></select> happening, but it looks like something serious.</p>
+                </div>
+                <div class="p-3 bg-slate-50 rounded-lg border border-slate-200 print-clean print-avoid-break">
+                    <p class="font-medium text-slate-900 mb-1">30. Alla fine della giornata, stiamo tutti solo cercando un po' di pace.</p>
+                    <p class="text-slate-700 leading-relaxed">At the end of the day, we <select class="blank-select px-2.5 py-1 text-sm bg-white border border-slate-300 rounded-lg" data-answer="are"><option value="">-- choose --</option><option value="are">are</option><option value="have">have</option><option value="stay">stay</option></select> all just looking for a bit of peace.</p>
+                </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center gap-3 no-print">
+                <button type="button" onclick="checkQuiz()" class="px-5 py-2.5 bg-purple-700 hover:bg-purple-800 text-white text-sm font-medium rounded-lg shadow-sm cursor-pointer">
+                    Check Answers
+                </button>
+                <button type="button" onclick="resetQuiz()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-medium rounded-lg cursor-pointer">
+                    Reset
+                </button>
+                <span id="score-display" class="text-sm font-semibold text-purple-800 ml-auto"></span>
+            </div>
+        </article>
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- ALWAYS-VISIBLE STICKY FOOTER SECTION                                -->
+    <!-- =================================================================== -->
+    <footer class="sticky bottom-0 z-10 bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] mt-auto print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+            
+            <!-- Copyright -->
+            <p class="text-slate-400">&copy; James Wynne English. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                <!-- Email -->
+                <a href="mailto:jwenglish@outlook.it" class="hover:text-slate-800 transition-colors">
+                    email
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- Website -->
+                <a href="https://jiwynne72-tech.github.io/james/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-800 transition-colors">
+                    website
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/393515316723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-slate-800 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3.5 h-3.5 fill-current text-emerald-600 print:text-black" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>whatsapp</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function checkQuiz() {
+            const selects = document.querySelectorAll('#stare-quiz select.blank-select');
+            let score = 0;
+            selects.forEach(sel => {
+                sel.classList.remove('border-emerald-500', 'bg-emerald-50', 'border-red-500', 'bg-red-50');
+                if (sel.value === sel.dataset.answer) {
+                    sel.classList.add('border-emerald-500', 'bg-emerald-50');
+                    score++;
+                } else {
+                    sel.classList.add('border-red-500', 'bg-red-50');
+                }
+            });
+            document.getElementById('score-display').textContent = `Score: ${score} / ${selects.length}`;
+        }
+        function resetQuiz() {
+            const selects = document.querySelectorAll('#stare-quiz select.blank-select');
+            selects.forEach(sel => {
+                sel.value = '';
+                sel.classList.remove('border-emerald-500', 'bg-emerald-50', 'border-red-500', 'bg-red-50');
+            });
+            document.getElementById('score-display').textContent = '';
+        }
+    </script>
+</body>
+</html>

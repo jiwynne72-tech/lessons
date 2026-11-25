@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cumulative summary review covering reported speech, get, uncountable nouns, modals, habits, verb patterns, good/well, quantifiers, and past perfect.">
+    <meta name="keywords" content="summary review, reported speech, get, advice, mustn't, used to, remember, stop, well vs good, past perfect">
+    <meta name="author" content="James Wynne English">
+    <meta name="lesson-level" content="B1/B1+">
+    <meta name="lesson-topics" content="Cumulative Review: Reported Speech, GET & Modals, Habits & Verb Patterns, Adverbs & Past Perfect">
+    <title>James Wynne English — Summary Review</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Dedicated Print Stylesheet */
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10.5pt;
+                line-height: 1.5;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-clean {
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                border-color: #d1d5db !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                border: none !important;
+                border-bottom: 1px solid #9ca3af !important;
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+
+            textarea {
+                border: 1px solid #d1d5db !important;
+                border-radius: 4px !important;
+                padding: 6px !important;
+            }
+
+            .print-avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+
+            footer {
+                position: static !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <header class="bg-white border-b border-slate-200 print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Teacher Logo -->
+            <div class="flex items-center justify-center">
+                <img 
+                    src="https://static.wixstatic.com/media/6ce7a7_e9543ef199f041e19b45784dc836abeb~mv2.png" 
+                    alt="James Wynne English Logo" 
+                    class="h-14 sm:h-16 w-auto object-contain"
+                    onerror="this.onerror=null; this.src='https://placehold.co/220x64/f8fafc/1e293b?text=James+Wynne+English';"
+                >
+            </div>
+            <!-- Subtitle / Document Type -->
+            <div class="text-center sm:text-right">
+                <p class="text-xs font-semibold uppercase tracking-wider text-blue-600">Summary Review</p>
+                <p class="text-sm font-medium text-slate-600">Consolidated Grammar & Transformation Practice</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- STUDENT INFO & PRINT CONTROLS BAR                                   -->
+    <!-- =================================================================== -->
+    <section class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 print-clean">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                <!-- Student Name -->
+                <div class="sm:col-span-5">
+                    <label for="student-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="student-name" 
+                        name="student-name" 
+                        placeholder="Enter student full name"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Student Email -->
+                <div class="sm:col-span-5">
+                    <label for="student-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="student-email" 
+                        name="student-email" 
+                        placeholder="Enter student email address"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Print Button (Hidden when printing) -->
+                <div class="sm:col-span-2 no-print">
+                    <button 
+                        type="button" 
+                        onclick="window.print()" 
+                        class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-sm font-medium rounded-lg shadow-sm transition-colors cursor-pointer"
+                        aria-label="Print this page"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                        <span>Print</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MAIN CONTENT CONTAINER                                              -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="flex items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-5">
+                <div>
+                    <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 rounded-md mb-2">Summary Review</span>
+                    <h1 class="text-xl sm:text-2xl font-bold text-slate-900">Cumulative Grammar &amp; Sentence Transformations</h1>
+                </div>
+                <span id="scoreDisplay" class="px-3.5 py-1.5 bg-slate-900 text-white text-xs font-bold rounded-full">Score: 0 / 11</span>
+            </div>
+
+            <div class="space-y-4 text-sm" id="summary-quiz">
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="loved">
+                    <p class="font-medium mb-2">1. &ldquo;I love this book,&rdquo; Sofia said. &rarr; Sofia said she <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="loves">loves</option><option value="loved">loved</option><option value="had loved">had loved</option></select> that book.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="got">
+                    <p class="font-medium mb-2">2. It was raining heavily, so everyone <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="got">got</option><option value="did">did</option><option value="made">made</option></select> completely soaked.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="advice">
+                    <p class="font-medium mb-2">3. The tutor gave some very useful <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">--choose--</option><option value="advices">advices</option><option value="advice">advice</option><option value="an advice">an advice</option></select> before the exam.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="mustn't">
+                    <p class="font-medium mb-2">4. Candidates <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="mustn't">mustn't</option><option value="don't have to">don't have to</option><option value="shouldn't have">shouldn't have</option></select> use phones during the test.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="fascinating">
+                    <p class="font-medium mb-2">5. The documentary about space travel was <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="fascinated">fascinated</option><option value="fascinating">fascinating</option></select>.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="used to">
+                    <p class="font-medium mb-2">6. When younger, the speaker <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="use to">use to</option><option value="used to">used to</option><option value="am used to">am used to</option></select> play the piano every afternoon.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="to lock">
+                    <p class="font-medium mb-2">7. Remember <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="locking">locking</option><option value="to lock">to lock</option></select> the front door before leaving.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="working">
+                    <p class="font-medium mb-2">8. She stopped <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="working">working</option><option value="to work">to work</option></select> at 6 PM after finishing all tasks.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="well">
+                    <p class="font-medium mb-2">9. Speaking English <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="good">good</option><option value="well">well</option></select> comes from regular practice.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="much">
+                    <p class="font-medium mb-2">10. There isn't <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="much">much</option><option value="many">many</option><option value="all">all</option></select> time left before departure.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+                <div class="question-item p-3.5 border border-slate-200 rounded-lg" data-answer="had become">
+                    <p class="font-medium mb-2">11. By sunset, the village <select class="quiz-select px-2 py-1 bg-slate-50 border border-slate-300 rounded"><option value="">-- choose --</option><option value="became">became</option><option value="had become">had become</option></select> completely silent.</p>
+                    <div class="feedback-msg text-xs font-semibold mt-1"></div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-3 no-print">
+                <button type="button" onclick="checkAll()" class="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-medium rounded-lg cursor-pointer">Check All Answers</button>
+                <button type="button" onclick="resetQuiz()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-medium rounded-lg cursor-pointer">Reset</button>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean print-avoid-break">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">Sentence Transformations &amp; Short Story Challenge</h2>
+            <div class="space-y-4 text-sm">
+                <div>
+                    <p class="font-medium mb-1">A. &ldquo;I will call you tomorrow,&rdquo; Luca told me. (Reported speech)</p>
+                    <input type="text" placeholder="Luca told me that..." class="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-lg">
+                </div>
+                <div>
+                    <p class="font-medium mb-1">B. First, finish the homework. Then, watch a film. (Past Perfect)</p>
+                    <input type="text" placeholder="By the time the film started..." class="w-full px-3.5 py-2 bg-slate-50 border border-slate-300 rounded-lg">
+                </div>
+                <div>
+                    <p class="font-medium mb-1">C. Short Fable (3&ndash;4 sentences using a past habit, Past Perfect, an adverb, and a <em>get</em> expression):</p>
+                    <textarea rows="4" placeholder="Write a short fable here..." class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg"></textarea>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- ALWAYS-VISIBLE STICKY FOOTER SECTION                                -->
+    <!-- =================================================================== -->
+    <footer class="sticky bottom-0 z-10 bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] mt-auto print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+            
+            <!-- Copyright -->
+            <p class="text-slate-400">&copy; James Wynne English. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                <!-- Email -->
+                <a href="mailto:jwenglish@outlook.it" class="hover:text-slate-800 transition-colors">
+                    email
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- Website -->
+                <a href="https://jiwynne72-tech.github.io/james/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-800 transition-colors">
+                    website
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/393515316723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-slate-800 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3.5 h-3.5 fill-current text-emerald-600 print:text-black" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>whatsapp</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function checkAll() {
+            const items = document.querySelectorAll('.question-item[data-answer]');
+            let score = 0;
+            items.forEach(item => {
+                const correct = item.getAttribute('data-answer');
+                const select = item.querySelector('.quiz-select');
+                const fb = item.querySelector('.feedback-msg');
+                if (select.value === correct) {
+                    score++;
+                    fb.textContent = 'Correct!';
+                    fb.className = 'feedback-msg text-xs font-semibold mt-1 text-emerald-700';
+                } else {
+                    fb.textContent = select.value === '' ? 'Please select an option.' : `Not quite. Expected: "${correct}".`;
+                    fb.className = 'feedback-msg text-xs font-semibold mt-1 text-red-700';
+                }
+            });
+            document.getElementById('scoreDisplay').textContent = `Score: ${score} / ${items.length}`;
+        }
+        function resetQuiz() {
+            const items = document.querySelectorAll('.question-item[data-answer]');
+            items.forEach(item => {
+                const select = item.querySelector('.quiz-select');
+                if (select) select.value = '';
+                const fb = item.querySelector('.feedback-msg');
+                if (fb) fb.textContent = '';
+            });
+            document.getElementById('scoreDisplay').textContent = 'Score: 0 / 11';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Wynne English — IELTS Reading Analysis &amp; Corrections</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Dedicated Print Stylesheet (Overrides dark mode for clean ink-saving printing) */
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10.5pt;
+                line-height: 1.5;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-clean {
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                border-color: #d1d5db !important;
+                color: #000000 !important;
+            }
+
+            .print-clean * {
+                color: #000000 !important;
+                background-color: transparent !important;
+                border-color: #d1d5db !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                border: none !important;
+                border-bottom: 1px solid #9ca3af !important;
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+
+            textarea {
+                border: 1px solid #d1d5db !important;
+                border-radius: 4px !important;
+                padding: 6px !important;
+            }
+
+            .print-avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+
+            footer {
+                position: static !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-sky-400/30 selection:text-white">
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <header class="bg-slate-900/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-20 print-clean">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Teacher Logo (Slightly larger inside a clean light pill for crisp contrast) -->
+            <div class="flex items-center justify-center bg-slate-100 px-4 py-2 rounded-xl shadow-inner">
+                <img 
+                    src="https://jiwynne72-tech.github.io/james/my%20logo%20en2.png" 
+                    alt="James Wynne English Logo" 
+                    class="h-14 sm:h-16 w-auto object-contain"
+                    onerror="this.onerror=null; this.src='https://placehold.co/240x68/f1f5f9/0f172a?text=James+Wynne+English';"
+                >
+            </div>
+
+            <!-- Document Metadata & Print Action -->
+            <div class="flex items-center gap-5">
+                <div class="text-center sm:text-right">
+                    <p class="text-xs font-bold uppercase tracking-widest text-sky-300">[header]</p>
+                    <p class="text-sm font-medium text-slate-200">[subheader]</p>
+                </div>
+
+                <!-- Print Button -->
+                <button 
+                    type="button" 
+                    onclick="window.print()" 
+                    class="no-print inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-sky-400 hover:bg-sky-300 active:bg-sky-500 text-slate-950 text-sm font-semibold rounded-lg shadow-lg shadow-sky-500/20 transition-all cursor-pointer"
+                    aria-label="Print this page"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                    </svg>
+                    <span>Print</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- MAIN CONTENT CONTAINER                                              -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- =============================================================== -->
+        <!-- STUDENT METADATA BAR                                            -->
+        <!-- =============================================================== -->
+        <section class="bg-slate-900 rounded-2xl shadow-xl shadow-black/25 border border-slate-800 p-5 sm:p-6 print-clean">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <!-- Student Name -->
+                <div>
+                    <label for="student-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                        Student Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="student-name" 
+                        name="student-name" 
+                        placeholder="Enter student full name"
+                        class="w-full px-4 py-2.5 text-sm text-white placeholder-slate-400 bg-slate-950/80 border border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400/60 focus:border-sky-400 transition-all"
+                    >
+                </div>
+
+                <!-- Student Email -->
+                <div>
+                    <label for="student-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">
+                        Student Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="student-email" 
+                        name="student-email" 
+                        placeholder="Enter student email address"
+                        class="w-full px-4 py-2.5 text-sm text-white placeholder-slate-400 bg-slate-950/80 border border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400/60 focus:border-sky-400 transition-all"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- =============================================================== -->
+        <!-- SECTION 1: SOURCE TEXT TRANSCRIPTION                            -->
+        <!-- =============================================================== -->
+        <article class="bg-slate-900 rounded-2xl shadow-xl shadow-black/25 border border-slate-800 overflow-hidden print-clean">
+            <!-- Section Header -->
+            <div class="bg-slate-800/50 border-b border-slate-800 px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                <div>
+                    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold bg-sky-500/15 text-sky-300 border border-sky-400/30 rounded-full mb-2">
+                        [header]
+                    </span>
+                    <h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                        [header]
+                    </h1>
+                </div>
+                <p class="text-sm text-slate-300 italic">
+                    [subheader]
+                </p>
+            </div>
+
+            <!-- Source Passages -->
+            <div class="p-6 space-y-4 text-sm sm:text-base text-slate-100 leading-relaxed">
+                <div class="p-4 bg-slate-950/75 rounded-xl border-l-4 border-sky-400 border-y border-r border-slate-800 print-clean">
+                    <p>[text]</p>
+                </div>
+
+                <div class="p-4 bg-slate-950/75 rounded-xl border-l-4 border-sky-400 border-y border-r border-slate-800 print-clean">
+                    <p>[text]</p>
+                </div>
+
+                <div class="p-4 bg-slate-950/75 rounded-xl border-l-4 border-sky-400 border-y border-r border-slate-800 print-clean">
+                    <p>[text]</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- =============================================================== -->
+        <!-- SECTION 2: CATEGORIZED ERROR & CORRECTION BREAKDOWN             -->
+        <!-- =============================================================== -->
+        <article class="bg-slate-900 rounded-2xl shadow-xl shadow-black/25 border border-slate-800 overflow-hidden print-clean">
+            <!-- Section Header -->
+            <div class="bg-slate-800/50 border-b border-slate-800 px-6 py-5">
+                <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold bg-amber-500/15 text-amber-300 border border-amber-400/30 rounded-full mb-2">
+                    [header]
+                </span>
+                <h2 class="text-xl font-bold text-white tracking-tight">
+                    [header]
+                </h2>
+                <p class="text-sm text-slate-300 mt-1">
+                    [subheader]
+                </p>
+            </div>
+
+            <div class="p-6 space-y-6">
+
+                <!-- Category 1 -->
+                <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 print-clean print-avoid-break">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-800">
+                        <span class="w-2.5 h-2.5 rounded-full bg-rose-400 shadow-[0_0_8px_rgba(251,113,133,0.7)]"></span>
+                        [header]
+                    </h3>
+
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold text-slate-100 mb-3">[subheader]</p>
+
+                            <!-- Side-by-Side Comparison Grid -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                                <div class="p-3.5 rounded-lg bg-rose-950/35 border border-rose-400/30">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-rose-300 mb-1">Original</span>
+                                    <p class="text-slate-100 italic">[text]</p>
+                                </div>
+                                <div class="p-3.5 rounded-lg bg-emerald-950/35 border border-emerald-400/30">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-1">Correction</span>
+                                    <p class="text-white font-medium italic">[text]</p>
+                                </div>
+                            </div>
+
+                            <!-- Explanation Callout -->
+                            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">
+                                <span class="font-semibold text-sky-300 mr-1.5">Issue &amp; Rule:</span>
+                                <span>[text]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="bg-slate-950/70 border border-slate-800 rounded-xl p-5 print-clean print-avoid-break">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-800">
+                        <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 shadow-[0_0_8px_rgba(129,140,248,0.7)]"></span>
+                        [header]
+                    </h3>
+
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-semibold text-slate-100 mb-3">[subheader]</p>
+
+                            <!-- Side-by-Side Comparison Grid -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+                                <div class="p-3.5 rounded-lg bg-rose-950/35 border border-rose-400/30">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-rose-300 mb-1">Original</span>
+                                    <p class="text-slate-100 italic">[text]</p>
+                                </div>
+                                <div class="p-3.5 rounded-lg bg-emerald-950/35 border border-emerald-400/30">
+                                    <span class="block text-[11px] font-bold uppercase tracking-wider text-emerald-300 mb-1">Correction</span>
+                                    <p class="text-white font-medium italic">[text]</p>
+                                </div>
+                            </div>
+
+                            <!-- Explanation Callout -->
+                            <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">
+                                <span class="font-semibold text-sky-300 mr-1.5">Issue &amp; Rule:</span>
+                                <span>[text]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <!-- =============================================================== -->
+        <!-- SECTION 3: STUDENT REFLECTION / NOTES AREA                      -->
+        <!-- =============================================================== -->
+        <article class="bg-slate-900 rounded-2xl shadow-xl shadow-black/25 border border-slate-800 overflow-hidden print-clean print-avoid-break">
+            <div class="bg-slate-800/50 border-b border-slate-800 px-6 py-4 flex items-center justify-between">
+                <div>
+                    <span class="inline-flex items-center px-2.5 py-0.5 text-xs font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-400/30 rounded-full mb-1.5">
+                        [header]
+                    </span>
+                    <h2 class="text-lg font-bold text-white">
+                        [header]
+                    </h2>
+                </div>
+            </div>
+
+            <div class="p-6">
+                <label for="student-notes" class="block text-sm font-medium text-slate-200 mb-2.5">
+                    [subheader]
+                </label>
+                <textarea 
+                    id="student-notes" 
+                    name="student-notes" 
+                    rows="4" 
+                    placeholder="[text]"
+                    class="w-full px-4 py-3 text-sm text-white placeholder-slate-400 bg-slate-950/80 border border-slate-700 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-400/60 focus:border-emerald-400 transition-all"
+                ></textarea>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- ALWAYS-VISIBLE STICKY FOOTER SECTION                                -->
+    <!-- =================================================================== -->
+    <footer class="sticky bottom-0 z-10 bg-slate-900/95 backdrop-blur-md border-t border-slate-800 shadow-[0_-4px_20px_rgba(0,0,0,0.45)] mt-auto print-clean">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-300">
+            
+            <!-- Copyright -->
+            <p class="text-slate-400">&copy; James Wynne English. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-medium">
+                <!-- Email -->
+                <a href="mailto:jwenglish@outlook.it" class="hover:text-sky-300 transition-colors">
+                    email
+                </a>
+
+                <span class="text-slate-600 select-none" aria-hidden="true">|</span>
+
+                <!-- Website -->
+                <a href="https://jiwynne72-tech.github.io/james/" target="_blank" rel="noopener noreferrer" class="hover:text-sky-300 transition-colors">
+                    website
+                </a>
+
+                <span class="text-slate-600 select-none" aria-hidden="true">|</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/393515316723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-emerald-300 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3.5 h-3.5 fill-current text-emerald-400 print:text-black" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-16 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>whatsapp</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

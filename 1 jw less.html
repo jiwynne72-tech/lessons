@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson notes and 29 practice questions covering reported speech, GET, countable/uncountable nouns, modals, -ed/-ing adjectives, and since/for.">
+    <meta name="keywords" content="reported speech, say vs tell, get, countable uncountable, many much, modals, contractions, -ed -ing adjectives, since for, present perfect">
+    <meta name="author" content="James Wynne English">
+    <meta name="lesson-level" content="B1/B1+">
+    <meta name="lesson-topics" content="Reported Speech, Verb 'GET', Quantifiers & Countability, Modals & -S Pronunciation, -ED/-ING Adjectives, Since/For">
+    <title>James Wynne English — Lesson 1: Grammar & Practice</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* Dedicated Print Stylesheet */
+        @media print {
+            @page {
+                margin: 1.5cm;
+                size: A4;
+            }
+
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                font-size: 10.5pt;
+                line-height: 1.5;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .print-clean {
+                box-shadow: none !important;
+                background-color: #ffffff !important;
+                border-color: #d1d5db !important;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                border: none !important;
+                border-bottom: 1px solid #9ca3af !important;
+                border-radius: 0 !important;
+                background-color: transparent !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                box-shadow: none !important;
+                color: #000000 !important;
+            }
+
+            textarea {
+                border: 1px solid #d1d5db !important;
+                border-radius: 4px !important;
+                padding: 6px !important;
+            }
+
+            .print-avoid-break {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+
+            a {
+                text-decoration: none !important;
+                color: #000000 !important;
+            }
+
+            footer {
+                position: static !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col antialiased">
+
+    <!-- =================================================================== -->
+    <!-- HEADER SECTION                                                      -->
+    <!-- =================================================================== -->
+    <header class="bg-white border-b border-slate-200 print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Teacher Logo -->
+            <div class="flex items-center justify-center">
+                <img 
+                    src="https://static.wixstatic.com/media/6ce7a7_e9543ef199f041e19b45784dc836abeb~mv2.png" 
+                    alt="James Wynne English Logo" 
+                    class="h-14 sm:h-16 w-auto object-contain"
+                    onerror="this.onerror=null; this.src='https://placehold.co/220x64/f8fafc/1e293b?text=James+Wynne+English';"
+                >
+            </div>
+            <!-- Subtitle / Document Type -->
+            <div class="text-center sm:text-right">
+                <p class="text-xs font-semibold uppercase tracking-wider text-blue-600">Lesson Notes & Practice</p>
+                <p class="text-sm font-medium text-slate-600">Reported Speech, GET, Quantifiers & Tenses</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- STUDENT INFO & PRINT CONTROLS BAR                                   -->
+    <!-- =================================================================== -->
+    <section class="max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sm:p-6 print-clean">
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-end">
+                <!-- Student Name -->
+                <div class="sm:col-span-5">
+                    <label for="student-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Name
+                    </label>
+                    <input 
+                        type="text" 
+                        id="student-name" 
+                        name="student-name" 
+                        placeholder="Enter student full name"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Student Email -->
+                <div class="sm:col-span-5">
+                    <label for="student-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1.5">
+                        Student Email
+                    </label>
+                    <input 
+                        type="email" 
+                        id="student-email" 
+                        name="student-email" 
+                        placeholder="Enter student email address"
+                        class="w-full px-3.5 py-2.5 text-sm bg-slate-50 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    >
+                </div>
+
+                <!-- Print Button (Hidden when printing) -->
+                <div class="sm:col-span-2 no-print">
+                    <button 
+                        type="button" 
+                        onclick="window.print()" 
+                        class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white text-sm font-medium rounded-lg shadow-sm transition-colors cursor-pointer"
+                        aria-label="Print this page"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                        </svg>
+                        <span>Print</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MAIN CONTENT CONTAINER                                              -->
+    <!-- =================================================================== -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Session Overview</span>
+            <h1 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Grammar Foundations &amp; Practice (29 Questions)</h1>
+            <p class="text-sm text-slate-600">Covers reported speech (<em>said</em> vs. <em>told</em>), multiple meanings of <em>get</em>, countable vs. uncountable nouns, modals and 3rd-person <em>-s</em>, participle adjectives, and <em>since</em>/<em>for</em> with present perfect.</p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Reported Speech</span>
+                <h2 class="text-xl font-bold text-slate-900">1. Reported Speech & Said vs. Told</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">1. Choose the correct sentence.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r1" value="a"> <span>She said me that she was leaving.</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r1" value="b"> <span>She told me that she was leaving.</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r1" value="c"> <span>She told that she was leaving.</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">2. “I don't like coffee,” he said. → He said that he _____ coffee.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r2" value="a"> <span>doesn't like</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r2" value="b"> <span>hadn't liked</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r2" value="c"> <span>didn't like</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">3. “I'll help you,” Marta told me. → Marta told me she _____ help me.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r3" value="a"> <span>would</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r3" value="b"> <span>will</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="r3" value="c"> <span>had</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Vocabulary & Verbs</span>
+                <h2 class="text-xl font-bold text-slate-900">2. Meanings & Patterns of GET</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">4. “I don't get what you're saying.” What does get mean here?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g1" value="a"> <span>Receive</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g1" value="b"> <span>Understand</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g1" value="c"> <span>Become</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">5. “It's getting dark.” means…</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g2" value="a"> <span>It is becoming dark.</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g2" value="b"> <span>It has arrived in the dark.</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g2" value="c"> <span>It is receiving darkness.</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">6. “What time did you get to the airport?” asks…</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g3" value="a"> <span>What time did you leave?</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g3" value="b"> <span>What did you buy?</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="g3" value="c"> <span>What time did you arrive?</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Quantifiers & Nouns</span>
+                <h2 class="text-xl font-bold text-slate-900">3. Countable vs. Uncountable Nouns & Quantifiers</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">7. There isn't _____ information in the email.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q1" value="a"> <span>many</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q1" value="b"> <span>much</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q1" value="c"> <span>a few</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">8. How _____ pieces of luggage are you taking?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q2" value="a"> <span>many</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q2" value="b"> <span>much</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q2" value="c"> <span>little</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">9. The news _____ surprising.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q3" value="a"> <span>are</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q3" value="b"> <span>have</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q3" value="c"> <span>is</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">10. We don't have _____ time, but we have _____ ideas.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q4" value="a"> <span>many / much</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q4" value="b"> <span>much / many</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q4" value="c"> <span>many / many</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">11. I'd like _____ advice before making a decision.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q5" value="a"> <span>some</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q5" value="b"> <span>an</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="q5" value="c"> <span>many</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Grammar & Pronunciation</span>
+                <h2 class="text-xl font-bold text-slate-900">4. Modals, Contractions, Third-Person -S & Infinitives</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">12. You _____ wear a seat belt. It's the law.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m1" value="a"> <span>should to</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m1" value="b"> <span>must to</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m1" value="c"> <span>must</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">13. Which contraction is correct?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m2" value="a"> <span>should of</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m2" value="b"> <span>should've</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m2" value="c"> <span>should'of</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">14. The student _____ the bus every morning.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m3" value="a"> <span>catches</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m3" value="b"> <span>catch</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m3" value="c"> <span>catchs</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">15. Which pair has the same final -s sound?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m4" value="a"> <span>works / plays</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m4" value="b"> <span>watches / runs</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m4" value="c"> <span>runs / plays</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">16. She _____ to learn Japanese when she was at university.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m5" value="a"> <span>decided learning</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m5" value="b"> <span>decided to learn</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m5" value="c"> <span>decided learn</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">17. He _____ to open the window, but it was stuck.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m6" value="a"> <span>tried</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m6" value="b"> <span>try</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m6" value="c"> <span>trying</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">18. _____ she like spicy food?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m7" value="a"> <span>Do</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m7" value="b"> <span>Is</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m7" value="c"> <span>Does</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">19. They promised _____ us as soon as they arrived.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m8" value="a"> <span>calling</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m8" value="b"> <span>to call</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m8" value="c"> <span>call</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">20. He doesn't _____ coffee after 6 p.m.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m9" value="a"> <span>drink</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m9" value="b"> <span>drinks</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m9" value="c"> <span>drinking</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">21. I managed _____ the last train.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m10" value="a"> <span>catch</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m10" value="b"> <span>catching</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="m10" value="c"> <span>to catch</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Adjectives</span>
+                <h2 class="text-xl font-bold text-slate-900">5. Interested vs. Interesting (-ED vs. -ING)</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">22. I'm really _____ in learning about other cultures.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a1" value="a"> <span>interesting</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a1" value="b"> <span>interested</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a1" value="c"> <span>interest</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">23. That documentary was so _____. I watched it twice!</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a2" value="a"> <span>interesting</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a2" value="b"> <span>interested</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a2" value="c"> <span>interest</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">24. The children were _____ by the magician's tricks.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a3" value="a"> <span>interesting</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a3" value="b"> <span>interest</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a3" value="c"> <span>interested</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">25. I find his stories _____, even when they're about ordinary things.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a4" value="a"> <span>interested</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a4" value="b"> <span>interesting</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a4" value="c"> <span>interest</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">26. Are you _____ in joining our book club?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a5" value="a"> <span>interested</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a5" value="b"> <span>interesting</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="a5" value="c"> <span>interest</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 sm:p-8 print-clean">
+            <div class="border-b border-slate-100 pb-4 mb-5">
+                <span class="inline-block px-2.5 py-1 text-xs font-semibold bg-blue-50 text-blue-700 rounded-md mb-2">Tenses</span>
+                <h2 class="text-xl font-bold text-slate-900">6. Since, For & Present Perfect Contrast</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="b">
+                    <p class="font-semibold text-slate-900 mb-2">27. I _____ the piano when I was six.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t1" value="a"> <span>have started playing</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t1" value="b"> <span>started playing</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t1" value="c"> <span>have been start playing</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="c">
+                    <p class="font-semibold text-slate-900 mb-2">28. She has worked at the hospital _____ 2019.</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t2" value="a"> <span>for</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t2" value="b"> <span>during</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t2" value="c"> <span>since</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div>
+                <div class="question border border-slate-200 rounded-lg p-4 print-clean print-avoid-break" data-answer="a">
+                    <p class="font-semibold text-slate-900 mb-2">29. We've been waiting _____ two hours. Where are they?</p>
+                    <div class="space-y-1.5 text-sm text-slate-700"><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t3" value="a"> <span>for</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t3" value="b"> <span>since</span></label><label class="flex items-center gap-2 p-2 rounded-lg bg-slate-50 hover:bg-blue-50/60 cursor-pointer"><input type="radio" name="t3" value="c"> <span>from</span></label></div>
+                    <div class="feedback text-xs font-semibold mt-2 min-h-[1rem]"></div>
+                </div></div>
+        </article>
+        <article class="bg-white rounded-xl shadow-sm border border-purple-200 p-5 sm:p-8 print-clean no-print">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">Check Your Results</h2>
+            <div class="flex flex-wrap gap-3">
+                <button type="button" onclick="checkAnswers()" class="px-5 py-2.5 bg-purple-700 hover:bg-purple-800 text-white text-sm font-medium rounded-lg cursor-pointer">Check My Answers</button>
+                <button type="button" onclick="resetQuiz()" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-medium rounded-lg cursor-pointer">Start Again</button>
+            </div>
+            <div id="result" class="text-sm font-semibold text-slate-800 mt-4" aria-live="polite"></div>
+            <details class="mt-4 p-3 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-700">
+                <summary class="font-semibold cursor-pointer">Show Answer Key</summary>
+                <p class="mt-2">1 B &middot; 2 C &middot; 3 A &middot; 4 B &middot; 5 A &middot; 6 C &middot; 7 B &middot; 8 A &middot; 9 C &middot; 10 B &middot; 11 A &middot; 12 C &middot; 13 B &middot; 14 A &middot; 15 C &middot; 16 B &middot; 17 A &middot; 18 C &middot; 19 B &middot; 20 A &middot; 21 C &middot; 22 B &middot; 23 A &middot; 24 C &middot; 25 B &middot; 26 A &middot; 27 B &middot; 28 C &middot; 29 A</p>
+            </details>
+        </article>
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- ALWAYS-VISIBLE STICKY FOOTER SECTION                                -->
+    <!-- =================================================================== -->
+    <footer class="sticky bottom-0 z-10 bg-white/95 backdrop-blur-sm border-t border-slate-200 shadow-[0_-2px_10px_rgba(0,0,0,0.03)] mt-auto print-clean">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+            
+            <!-- Copyright -->
+            <p class="text-slate-400">&copy; James Wynne English. All rights reserved.</p>
+
+            <!-- Contact Links -->
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+                <!-- Email -->
+                <a href="mailto:jwenglish@outlook.it" class="hover:text-slate-800 transition-colors">
+                    email
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- Website -->
+                <a href="https://jiwynne72-tech.github.io/james/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-800 transition-colors">
+                    website
+                </a>
+
+                <span class="text-slate-300 select-none" aria-hidden="true">|</span>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/393515316723" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 hover:text-slate-800 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-3.5 h-3.5 fill-current text-emerald-600 print:text-black" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>whatsapp</span>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const qs = [...document.querySelectorAll('.question')];
+            let score = 0, answered = 0;
+            qs.forEach(q => {
+                const chosen = q.querySelector('input:checked'), fb = q.querySelector('.feedback');
+                if (!chosen) { fb.textContent = 'Choose an answer.'; fb.className = 'feedback text-xs font-semibold mt-2 text-amber-600'; return; }
+                answered++;
+                if (chosen.value === q.dataset.answer) {
+                    score++;
+                    fb.textContent = 'Correct!';
+                    fb.className = 'feedback text-xs font-semibold mt-2 text-emerald-700';
+                } else {
+                    fb.textContent = 'Not quite. Try again or check the answer key.';
+                    fb.className = 'feedback text-xs font-semibold mt-2 text-red-700';
+                }
+            });
+            document.getElementById('result').textContent = `You scored ${score} out of ${qs.length}. Answered: ${answered}/${qs.length}.`;
+        }
+        function resetQuiz() {
+            document.querySelectorAll('input[type=radio]').forEach(x => x.checked = false);
+            document.querySelectorAll('.feedback').forEach(x => { x.textContent = ''; });
+            document.getElementById('result').textContent = '';
+        }
+    </script>
+</body>
+</html>
